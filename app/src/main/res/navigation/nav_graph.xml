@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/blankFragment2">
+
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="ru.myitschool.vsu2021.filozop_s_a.decemberessay.ItemFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_itemFragment_to_blankFragment2"
+            app:destination="@id/blankFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="ru.myitschool.vsu2021.filozop_s_a.decemberessay.BlankFragment2"
+        android:label="blank_fragment"
+        tools:layout="@layout/blank_fragment" >
+        <action
+            android:id="@+id/action_blankFragment2_to_itemFragment"
+            app:destination="@id/itemFragment" />
+    </fragment>
+</navigation>
